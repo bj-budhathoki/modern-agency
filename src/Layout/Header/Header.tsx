@@ -4,7 +4,7 @@ import menuItems from '@/data/header.data';
 import { Button } from '@/components/';
 const Header = (): JSX.Element => {
     return (
-        <header className="sticky top-0 bg-white border-b-2">
+        <header className="sticky top-0 z-20 bg-white">
             <div className="container flex items-center justify-between max-w-6xl py-3 mx-auto">
                 <Image src={`/assets/logo.svg`} height={50} width={200} />
                 <nav className="flex justify-between gap-20">

@@ -1,0 +1,30 @@
+.banner{
+    position: relative;
+    z-index: 2;
+}
+.banner::before{
+    position: absolute;
+    content: '';
+    z-index:-1;
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/shape-left.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 36%;
+    bottom:6;
+    left:0
+}
+.banner::after{
+    position: absolute;
+    content: '';
+    z-index:-1;
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/shape-right.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 32%;
+    bottom:40px;
+    right:0;
+}
